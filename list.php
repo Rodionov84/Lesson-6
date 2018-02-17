@@ -19,7 +19,7 @@ if (!file_exists(LOCAL_JSON)) {
 
 	foreach ($tests as $index => $test) {
 		$count = count($test['questions']); // количество вопросов
-		echo "<li><a href='test.php?test={$index}'>{$test['test_name']}</a> ({$count} вопрос(ов))</li>";
+		echo "<li><a href='test.php?index={$index}'>{$test['test_name']}</a> ({$count} вопрос(ов))</li>";
 	}
 
 	echo "</ul>";
